@@ -1,0 +1,51 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.board {
+  border: 4px solid darkblue;
+  border-radius: 10px;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.piece {
+  background: lightblue;
+  border: 2px solid darkblue;
+  font-size: 30px;
+  font-weight: 800;
+  cursor: pointer;
+  outline: none;
+}
+
+.game {
+  width: 200px;
+  margin: 20px auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  position: relative;
+  color: whitesmoke;
+}
+
+.particles {
+  background-color: cornflowerblue;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
